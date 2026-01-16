@@ -4,162 +4,553 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Yunus Gençoğlu kimdir? | Biyografi, Deneyim, İletişim</title>
-  <meta name="description" content="Yunus Gençoğlu kimdir? İzmir merkezli inşaat ve turizm şirket sahibi. Gençoğlu İnşaat kurucusu. 10+ yıl deneyim. İletişim bilgileri ve SSS." />
-  <meta name="keywords" content="Yunus Gençoğlu kimdir, Yunus Gençoğlu, Gençoğlu İnşaat, İzmir inşaat firması, inşaat şirket sahibi, turizm şirket sahibi" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.yunusgencoglu.com/yunus-gencoglu-kimdir.html" />
+  <!-- SEO: Title + Description -->
+  <title>Yunus Gençoğlu | İnşaat ve Turizm Şirket Sahibi (İzmir)</title>
+  <meta name="description" content="Yunus Gençoğlu; İzmir’de inşaat ve turizm alanlarında faaliyet gösteren şirket sahibidir. 10+ yıllık deneyimiyle proje yönetimi, operasyon ve iş geliştirme süreçlerinde çalışmaktadır. İletişim: 0537 991 41 05." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#ffffff" />
 
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Yunus Gençoğlu kimdir?" />
-  <meta property="og:description" content="Detaylı biyografi, deneyim ve iletişim bilgileri." />
-  <meta property="og:url" content="https://www.yunusgencoglu.com/yunus-gencoglu-kimdir.html" />
+  <!-- Canonical (tek alan adı kullanın: www veya non-www sizde www çalışıyor) -->
+  <link rel="canonical" href="https://www.yunusgencoglu.com/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Yunus Gençoğlu | İnşaat ve Turizm Şirket Sahibi" />
+  <meta property="og:description" content="İzmir’de inşaat ve turizm alanlarında şirket sahibi. 10+ yıl deneyim. Proje yönetimi ve operasyon." />
+  <meta property="og:url" content="https://www.yunusgencoglu.com/" />
   <meta property="og:image" content="https://www.yunusgencoglu.com/assets/yunus.jpg" />
+  <meta property="og:image:alt" content="Yunus Gençoğlu profil fotoğrafı" />
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Yunus Gençoğlu | İnşaat ve Turizm Şirket Sahibi" />
+  <meta name="twitter:description" content="İzmir’de inşaat ve turizm alanlarında şirket sahibi. 10+ yıl deneyim." />
+  <meta name="twitter:image" content="https://www.yunusgencoglu.com/assets/yunus.jpg" />
 
+  <!-- Basic styling: clean white corporate -->
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --card:#ffffff;
+      --border:#e2e8f0;
+      --accent:#0ea5e9;
+      --accent2:#22c55e;
+      --shadow: 0 10px 25px rgba(15, 23, 42, .08);
+      --radius: 18px;
+      --max: 1100px;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans";
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a{ color: inherit; text-decoration:none; }
+    .wrap{ max-width: var(--max); margin:0 auto; padding: 22px 16px 70px; }
+
+    /* Sticky header */
+    .topbar{
+      position: sticky; top:0;
+      background: rgba(255,255,255,.88);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      z-index: 10;
+    }
+    .topbar-inner{
+      max-width: var(--max);
+      margin:0 auto;
+      padding: 12px 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .brand{ display:flex; flex-direction:column; gap:2px; }
+    .brand strong{ font-size: 16px; letter-spacing:.2px; }
+    .brand span{ font-size: 13px; color: var(--muted); }
+
+    .nav{ display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
+    .nav a{
+      font-size: 13px;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #fff;
+    }
+    .nav a:hover{ border-color:#cbd5e1; box-shadow: 0 6px 14px rgba(15,23,42,.06); }
+
+    /* Cards */
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    /* Hero */
+    .hero{
+      margin-top: 22px;
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 18px;
+      align-items: start;
+    }
+    .hero-text{ padding: 22px; }
+    h1{
+      margin:0 0 10px;
+      font-size: 38px;
+      line-height: 1.15;
+      letter-spacing: -0.4px;
+    }
+    .lead{ margin:0 0 14px; color: var(--muted); font-size: 15px; }
+
+    .cta-row{
+      display:flex; flex-wrap:wrap; gap:10px; margin-top: 14px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background:#fff;
+      font-size: 13px;
+      cursor:pointer;
+      white-space: nowrap;
+    }
+    .btn.primary{
+      border-color: rgba(14,165,233,.35);
+      background: rgba(14,165,233,.08);
+    }
+    .btn.success{
+      border-color: rgba(34,197,94,.35);
+      background: rgba(34,197,94,.08);
+    }
+    .btn:hover{ box-shadow: 0 8px 18px rgba(15,23,42,.08); }
+
+    .badges{ display:flex; flex-wrap:wrap; gap:10px; margin-top: 14px; }
+    .badge{
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background:#fff;
+      min-width: 160px;
+    }
+    .badge b{ display:block; font-size: 18px; }
+    .badge small{ color: var(--muted); }
+
+    .tags{ display:flex; flex-wrap:wrap; gap:8px; margin-top: 14px; }
+    .tag{
+      font-size: 12px;
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background:#fff;
+      color: #0f172a;
+    }
+
+    /* Photo */
+    .photo-card{
+      padding: 14px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .photo{
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background:#f8fafc;
+    }
+    .photo-meta{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      padding: 2px 2px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* Content grids */
+    .grid2{
+      margin-top: 18px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .grid3{
+      margin-top: 18px;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 18px;
+    }
+    .section{ padding: 20px 22px; }
+    .section h2{ margin:0 0 10px; font-size: 20px; letter-spacing: -.2px; }
+    .section h3{ margin:16px 0 8px; font-size: 16px; }
+    ul{ margin:10px 0 0 18px; color: var(--muted); }
+    li{ margin: 6px 0; }
+    p{ margin: 10px 0 0; }
+
+    .muted{ color: var(--muted); }
+
+    /* Callout */
+    .callout{
+      margin-top: 18px;
+      padding: 18px 22px;
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:14px;
+    }
+    .callout strong{ display:block; margin-bottom:4px; }
+    .callout .right{ display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
+
+    /* FAQ */
+    details{
+      border:1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 14px;
+      background:#fff;
+      margin-top: 10px;
+    }
+    summary{
+      cursor:pointer;
+      font-weight: 600;
+    }
+    details p{ margin-top: 8px; color: var(--muted); }
+
+    /* Footer */
+    footer{
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align:center;
+    }
+    footer a{ text-decoration: underline; }
+
+    /* Mobile: photo comes first */
+    @media (max-width: 860px){
+      .hero{ grid-template-columns: 1fr; }
+      .photo-card{ order: -1; }
+      h1{ font-size: 32px; }
+      .badge{ min-width: 0; flex: 1 1 140px; }
+      .grid2{ grid-template-columns: 1fr; }
+      .grid3{ grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <!-- Structured data (Schema.org): Person + Organization + WebSite + FAQ -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@graph":[
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        "@type":"Person",
-        "@id":"https://www.yunusgencoglu.com/#person",
-        "name":"Yunus Gençoğlu",
-        "jobTitle":"İnşaat ve Turizm Şirket Sahibi",
-        "address":{"@type":"PostalAddress","addressLocality":"İzmir","addressCountry":"TR"},
-        "image":"https://www.yunusgencoglu.com/assets/yunus.jpg",
-        "url":"https://www.yunusgencoglu.com/",
-        "telephone":"+905379914105",
-        "email":"info@gencogluinsaat.com.tr",
-        "sameAs":[
+        "@type": "WebSite",
+        "@id": "https://www.yunusgencoglu.com/#website",
+        "url": "https://www.yunusgencoglu.com/",
+        "name": "Yunus Gençoğlu",
+        "inLanguage": "tr-TR"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.yunusgencoglu.com/#person",
+        "name": "Yunus Gençoğlu",
+        "jobTitle": "İnşaat ve Turizm Şirket Sahibi",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "İzmir",
+          "addressCountry": "TR"
+        },
+        "alumniOf": "Önlisans",
+        "image": "https://www.yunusgencoglu.com/assets/yunus.jpg",
+        "url": "https://www.yunusgencoglu.com/",
+        "telephone": "+905379914105",
+        "email": "info@gencogluinsaat.com.tr",
+        "sameAs": [
           "https://gencogluinsaat.com.tr",
           "https://linkedin.com/in/yunus-gen%C3%A7o%C4%9Flu-0822a7203"
         ]
       },
       {
-        "@type":"Organization",
-        "@id":"https://gencogluinsaat.com.tr/#org",
-        "name":"Gençoğlu İnşaat",
-        "url":"https://gencogluinsaat.com.tr",
-        "founder":{"@id":"https://www.yunusgencoglu.com/#person"}
+        "@type": "Organization",
+        "@id": "https://gencogluinsaat.com.tr/#organization",
+        "name": "Gençoğlu İnşaat",
+        "url": "https://gencogluinsaat.com.tr",
+        "email": "info@gencogluinsaat.com.tr",
+        "telephone": "+905379914105",
+        "founder": { "@id": "https://www.yunusgencoglu.com/#person" }
       },
       {
-        "@type":"Article",
-        "headline":"Yunus Gençoğlu kimdir?",
-        "datePublished":"2026-01-16",
-        "dateModified":"2026-01-16",
-        "author":{"@id":"https://www.yunusgencoglu.com/#person"},
-        "mainEntityOfPage":"https://www.yunusgencoglu.com/yunus-gencoglu-kimdir.html"
-      },
-      {
-        "@type":"FAQPage",
-        "mainEntity":[
-          {"@type":"Question","name":"Yunus Gençoğlu kimdir?","acceptedAnswer":{"@type":"Answer","text":"Yunus Gençoğlu; İzmir’de inşaat ve turizm alanlarında faaliyet gösteren şirket sahibidir. 10+ yıllık deneyimiyle proje yönetimi, operasyon ve iş geliştirme süreçlerinde çalışmaktadır."}},
-          {"@type":"Question","name":"Yunus Gençoğlu ne iş yapar?","acceptedAnswer":{"@type":"Answer","text":"İnşaat projelerinde planlama ve operasyon yönetimi ile turizm alanında işletme ve süreç yönetimi konularında çalışır; ekip koordinasyonu, tedarik süreçleri ve iş geliştirme başlıklarında aktif rol alır."}},
-          {"@type":"Question","name":"Yunus Gençoğlu hangi şehirde faaliyet gösteriyor?","acceptedAnswer":{"@type":"Answer","text":"Yunus Gençoğlu, İzmir merkezli olarak çalışmalarını sürdürmektedir."}},
-          {"@type":"Question","name":"Yunus Gençoğlu’nun mesleği ve ünvanı nedir?","acceptedAnswer":{"@type":"Answer","text":"İnşaat ve turizm sektörlerinde şirket sahibidir. Proje ve operasyon yönetimi odaklı çalışır."}},
-          {"@type":"Question","name":"Yunus Gençoğlu’nun eğitim durumu nedir?","acceptedAnswer":{"@type":"Answer","text":"Önlisans mezunudur."}},
-          {"@type":"Question","name":"Yunus Gençoğlu kaç yıllık deneyime sahiptir?","acceptedAnswer":{"@type":"Answer","text":"10+ yıl iş deneyimine sahiptir."}},
-          {"@type":"Question","name":"Gençoğlu İnşaat web sitesi hangisidir?","acceptedAnswer":{"@type":"Answer","text":"Gençoğlu İnşaat web sitesi gencogluinsaat.com.tr adresidir."}},
-          {"@type":"Question","name":"Yunus Gençoğlu hangi alanlarda iletişime açıktır?","acceptedAnswer":{"@type":"Answer","text":"Proje değerlendirme, iş birliği, kurumsal iletişim ve genel bilgilendirme konuları için iletişime geçebilirsiniz."}},
-          {"@type":"Question","name":"Yunus Gençoğlu’na nasıl ulaşabilirim?","acceptedAnswer":{"@type":"Answer","text":"Telefon: 0537 991 41 05. E-posta: info@gencogluinsaat.com.tr. LinkedIn profil bağlantısı sayfada yer alır."}},
-          {"@type":"Question","name":"Bu sayfa ne amaçla hazırlanmıştır?","acceptedAnswer":{"@type":"Answer","text":"Bu sayfa Yunus Gençoğlu hakkında bilgilendirici tanıtım amaçlı hazırlanmıştır."}}
+        "@type": "FAQPage",
+        "@id": "https://www.yunusgencoglu.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Yunus Gençoğlu kimdir?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yunus Gençoğlu; İzmir’de inşaat ve turizm alanlarında faaliyet gösteren şirket sahibidir. 10+ yıllık deneyimiyle proje yönetimi, operasyon ve iş geliştirme süreçlerinde çalışmaktadır."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Gençoğlu İnşaat web sitesi hangisi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gençoğlu İnşaat firmasının web sitesi gencogluinsaat.com.tr adresidir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "İletişim bilgileri nelerdir?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Telefon: 0537 991 41 05. E-posta: info@gencogluinsaat.com.tr. LinkedIn profili sayfada yer almaktadır."
+            }
+          }
         ]
       }
     ]
   }
   </script>
-
-  <style>
-    :root{ --bg:#ffffff; --text:#111827; --muted:#6b7280; --line:#e5e7eb; --brand:#2563eb; --soft:#f9fafb; --radius:16px; }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.75}
-    header{border-bottom:1px solid var(--line);background:#fff}
-    .bar{max-width:1100px;margin:0 auto;padding:16px 20px;display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
-    .brand h1{margin:0;font-size:22px}
-    .brand p{margin:2px 0 0;color:var(--muted);font-size:13px}
-    nav a{color:var(--brand);text-decoration:none;font-weight:900;font-size:14px;margin-left:12px}
-    .wrap{max-width:1100px;margin:0 auto;padding:26px 20px}
-    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:start}
-    .card{background:var(--soft);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
-    h2{margin:0 0 10px;font-size:34px;line-height:1.15}
-    p{margin:10px 0;color:#374151;font-size:15px}
-    .img{width:100%;border-radius:var(--radius);border:1px solid var(--line);box-shadow:0 10px 25px rgba(0,0,0,.08)}
-    .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
-    .btn{display:inline-block;border-radius:999px;padding:11px 14px;text-decoration:none;font-weight:900;font-size:14px;border:1px solid var(--brand);color:var(--brand);background:#fff}
-    .btn.primary{background:var(--brand);color:#fff}
-    details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-top:10px}
-    summary{cursor:pointer;font-weight:800}
-    details p{margin-top:8px;color:#4b5563}
-    footer{border-top:1px solid var(--line);margin-top:40px;padding:18px 20px;text-align:center;color:var(--muted);font-size:13px}
-    @media (max-width:900px){.hero{grid-template-columns:1fr}}
-  </style>
 </head>
+
 <body>
-
-<header>
-  <div class="bar">
-    <div class="brand">
-      <h1>Yunus Gençoğlu</h1>
-      <p>Detaylı biyografi · SSS · İletişim</p>
-    </div>
-    <nav>
-      <a href="/">Ana Sayfa</a>
-      <a href="#sss">SSS</a>
-      <a href="#iletisim">İletişim</a>
-    </nav>
-  </div>
-</header>
-
-<main class="wrap">
-  <section class="hero">
-    <div class="card">
-      <h2>Yunus Gençoğlu kimdir?</h2>
-      <p>
-        Yunus Gençoğlu; İzmir’de inşaat ve turizm alanlarında faaliyet gösteren şirket sahibidir.
-        10+ yıllık deneyimiyle proje yönetimi, operasyon ve iş geliştirme süreçlerinde çalışmalar yürütmektedir.
-      </p>
-      <p>
-        Firma web sitesi: <a href="https://gencogluinsaat.com.tr" target="_blank" rel="noopener"><strong>gencogluinsaat.com.tr</strong></a>
-      </p>
-
-      <div class="cta">
-        <a class="btn primary" href="https://gencogluinsaat.com.tr" target="_blank" rel="noopener">Gençoğlu İnşaat</a>
-        <a class="btn" href="#iletisim">İletişim</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <strong>Yunus Gençoğlu</strong>
+        <span>İzmir • İnşaat ve Turizm Şirket Sahibi</span>
       </div>
+      <nav class="nav" aria-label="Sayfa menüsü">
+        <a href="#hakkinda">Hakkında</a>
+        <a href="#calisma">Çalışma Alanları</a>
+        <a href="#deneyim">Deneyim</a>
+        <a href="#projeler">Projeler</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
     </div>
+  </header>
 
-    <div>
-      <img class="img" src="assets/yunus.jpg" alt="Yunus Gençoğlu profil fotoğrafı" />
-    </div>
-  </section>
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero" id="ust">
+      <article class="card hero-text">
+        <h1>Yunus Gençoğlu kimdir?</h1>
+        <p class="lead">
+          Yunus Gençoğlu, İzmir’de inşaat ve turizm alanlarında faaliyet gösteren şirket sahibidir.
+          10+ yıl sektör deneyimiyle proje yönetimi, iş geliştirme ve operasyon süreçlerinde çalışmaktadır.
+        </p>
 
-  <section class="card" id="sss" style="margin-top:18px;">
-    <h3 style="margin:0 0 8px;">Sık Sorulan Sorular (10)</h3>
+        <div class="cta-row" aria-label="Hızlı bağlantılar">
+          <a class="btn primary" href="https://gencogluinsaat.com.tr" target="_blank" rel="noopener">
+            Gençoğlu İnşaat Web Sitesi
+          </a>
+          <a class="btn success" href="#iletisim">
+            İletişim Bilgileri
+          </a>
+        </div>
 
-    <details><summary>Yunus Gençoğlu kimdir?</summary><p>Yunus Gençoğlu; İzmir’de inşaat ve turizm alanlarında faaliyet gösteren şirket sahibidir. 10+ yıllık deneyimiyle proje yönetimi, operasyon ve iş geliştirme süreçlerinde çalışmaktadır.</p></details>
-    <details><summary>Yunus Gençoğlu ne iş yapar?</summary><p>İnşaat projelerinde planlama ve operasyon yönetimi ile turizm alanında işletme ve süreç yönetimi konularında çalışır; ekip koordinasyonu, tedarik süreçleri ve iş geliştirme başlıklarında aktif rol alır.</p></details>
-    <details><summary>Yunus Gençoğlu hangi şehirde faaliyet gösteriyor?</summary><p>Yunus Gençoğlu, İzmir merkezli olarak çalışmalarını sürdürmektedir.</p></details>
-    <details><summary>Yunus Gençoğlu’nun mesleği ve ünvanı nedir?</summary><p>İnşaat ve turizm sektörlerinde şirket sahibidir. Proje ve operasyon yönetimi odaklı çalışır.</p></details>
-    <details><summary>Yunus Gençoğlu’nun eğitim durumu nedir?</summary><p>Önlisans mezunudur.</p></details>
-    <details><summary>Yunus Gençoğlu kaç yıllık deneyime sahiptir?</summary><p>10+ yıl iş deneyimine sahiptir.</p></details>
-    <details><summary>Gençoğlu İnşaat web sitesi hangisidir?</summary><p>Gençoğlu İnşaat web sitesi <strong>gencogluinsaat.com.tr</strong> adresidir.</p></details>
-    <details><summary>Yunus Gençoğlu hangi alanlarda iletişime açıktır?</summary><p>Proje değerlendirme, iş birliği, kurumsal iletişim ve genel bilgilendirme konuları için iletişime geçebilirsiniz.</p></details>
-    <details><summary>Yunus Gençoğlu’na nasıl ulaşabilirim?</summary><p>Telefon: 0537 991 41 05 · E-posta: info@gencogluinsaat.com.tr · LinkedIn profil bağlantısı sayfada yer alır.</p></details>
-    <details><summary>Bu sayfa ne amaçla hazırlanmıştır?</summary><p>Bu sayfa Yunus Gençoğlu hakkında bilgilendirici tanıtım amaçlı hazırlanmıştır.</p></details>
-  </section>
+        <div class="badges" role="list">
+          <div class="badge" role="listitem">
+            <b>10+ yıl</b><small>İş deneyimi</small>
+          </div>
+          <div class="badge" role="listitem">
+            <b>İzmir</b><small>Şehir</small>
+          </div>
+          <div class="badge" role="listitem">
+            <b>Önlisans</b><small>Eğitim</small>
+          </div>
+        </div>
 
-  <section class="card" id="iletisim" style="margin-top:18px; padding:18px;">
-    <h3 style="margin:0 0 8px;">İletişim</h3>
-    <div class="cta">
-      <a class="btn" href="tel:+905379914105">0537 991 41 05</a>
-      <a class="btn" href="mailto:info@gencogluinsaat.com.tr">info@gencogluinsaat.com.tr</a>
-      <a class="btn" target="_blank" rel="noopener" href="https://linkedin.com/in/yunus-gen%C3%A7o%C4%9Flu-0822a7203">LinkedIn</a>
-    </div>
-  </section>
-</main>
+        <div class="tags" aria-label="Uzmanlık alanları">
+          <span class="tag">İnşaat</span>
+          <span class="tag">Turizm</span>
+          <span class="tag">Girişimcilik</span>
+          <span class="tag">Proje Yönetimi</span>
+          <span class="tag">Operasyon</span>
+          <span class="tag">İş Geliştirme</span>
+        </div>
 
-<footer>© 2026 Yunus Gençoğlu · Tüm hakları saklıdır.</footer>
+        <p class="muted" style="margin-top:14px;">
+          Not: Bu sayfa, Yunus Gençoğlu hakkında bilgilendirici tanıtım amaçlı hazırlanmıştır.
+        </p>
+      </article>
+
+      <aside class="card photo-card" aria-label="Profil fotoğrafı">
+        <img class="photo" src="assets/yunus.jpg" alt="Yunus Gençoğlu - İzmir’de inşaat ve turizm alanlarında şirket sahibi" loading="eager" />
+        <div class="photo-meta">
+          <span>Profil</span>
+          <span>Güncellendi</span>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT + EXPERIENCE -->
+    <section class="grid2">
+      <article id="hakkinda" class="card section">
+        <h2>Hakkında</h2>
+        <p class="muted">
+          Yunus Gençoğlu; inşaat ve turizm alanlarında şirket sahibi olarak, sürdürülebilir büyüme, hizmet kalitesi ve operasyonel verimlilik odağında çalışır.
+          Proje planlama, ekip koordinasyonu ve süreç yönetimi konularında aktif rol alır.
+        </p>
+
+        <h3>Odak Noktaları</h3>
+        <ul>
+          <li>İnşaat projelerinde planlama ve uygulama koordinasyonu</li>
+          <li>Turizm operasyonlarında süreç yönetimi ve hizmet kalitesi</li>
+          <li>İş geliştirme, tedarik ve ekip yönetimi</li>
+          <li>Sonuç odaklı, ölçülebilir hedeflerle ilerleme</li>
+        </ul>
+      </article>
+
+      <article id="deneyim" class="card section">
+        <h2>Deneyim</h2>
+        <p class="muted">
+          10+ yıllık deneyim kapsamında; proje koordinasyonu, saha/operasyon yönetimi, tedarik ve ekip süreçleri ile iş geliştirme faaliyetlerinde bulunmuştur.
+        </p>
+
+        <h3>Öne Çıkan Başlıklar</h3>
+        <ul>
+          <li>Şirket sahipliği ve yönetim</li>
+          <li>Operasyon ve süreç yönetimi</li>
+          <li>Proje planlama ve koordinasyon</li>
+          <li>Tedarikçi ilişkileri ve ekip yönetimi</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- WORK AREAS -->
+    <section id="calisma" class="grid3">
+      <article class="card section">
+        <h2>İnşaat</h2>
+        <p class="muted">
+          Proje planlama, saha koordinasyonu, kalite ve teslim süreçlerinde yapılandırılmış yönetim yaklaşımı.
+        </p>
+        <ul>
+          <li>Planlama ve iş programı</li>
+          <li>Saha/ekip koordinasyonu</li>
+          <li>Kalite ve teslim takibi</li>
+        </ul>
+      </article>
+
+      <article class="card section">
+        <h2>Turizm</h2>
+        <p class="muted">
+          Operasyonel verimlilik, hizmet standardı ve müşteri memnuniyeti odağında süreç yönetimi.
+        </p>
+        <ul>
+          <li>Operasyon yönetimi</li>
+          <li>Hizmet kalitesi</li>
+          <li>Süreç iyileştirme</li>
+        </ul>
+      </article>
+
+      <article class="card section">
+        <h2>İş Geliştirme</h2>
+        <p class="muted">
+          Yeni fırsatların değerlendirilmesi, iş ortaklıkları ve sürdürülebilir büyüme için stratejik yaklaşım.
+        </p>
+        <ul>
+          <li>İş fırsatı analizi</li>
+          <li>Ortaklıklar</li>
+          <li>Süreç ve maliyet optimizasyonu</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- PROJECTS / PORTFOLIO (placeholders - you can fill later) -->
+    <section id="projeler" class="card section" style="margin-top:18px;">
+      <h2>Projeler ve Çalışmalar</h2>
+      <p class="muted">
+      Gençoğlu Turizm İnşaat Yapı Sanayi Tic. Ltd. Şti.
+      </p>
+
+      <div class="grid2" style="margin-top:14px;">
+        <div class="card section" style="box-shadow:none;">
+          <h3 style="margin-top:0;">İnşaat Projeleri</h3>
+          <ul>
+            <li>Planlama ve saha koordinasyonu</li>
+            <li>Tedarik ve ekip yönetimi</li>
+            <li>Teslim ve kalite süreçleri</li>
+          </ul>
+        </div>
+
+        <div class="card section" style="box-shadow:none;">
+          <h3 style="margin-top:0;">Turizm Operasyonları</h3>
+          <ul>
+            <li>Hizmet standardı geliştirme</li>
+            <li>Süreç iyileştirme</li>
+            <li>Ekip koordinasyonu</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALLOUT -->
+    <section class="card callout" aria-label="Hızlı iletişim">
+      <div>
+        <strong>Gençoğlu İnşaat</strong>
+        <div class="muted">Yunus Gençoğlu’nun inşaat firmasına ait web sitesi: <a href="https://gencogluinsaat.com.tr" target="_blank" rel="noopener">gencogluinsaat.com.tr</a></div>
+      </div>
+      <div class="right">
+        <a class="btn" href="tel:+905379914105">Ara: 0537 991 41 05</a>
+        <a class="btn" href="mailto:info@gencogluinsaat.com.tr">E-posta Gönder</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card section" style="margin-top:18px;">
+      <h2>Sık Sorulan Sorular</h2>
+
+      <details>
+        <summary>Yunus Gençoğlu kimdir?</summary>
+        <p>Yunus Gençoğlu; İzmir’de inşaat ve turizm alanlarında faaliyet gösteren şirket sahibidir. 10+ yıllık deneyimiyle proje yönetimi, operasyon ve iş geliştirme süreçlerinde çalışmaktadır.</p>
+      </details>
+
+      <details>
+        <summary>Gençoğlu İnşaat web sitesi hangisi?</summary>
+        <p>Gençoğlu İnşaat firmasının web sitesi <a href="https://gencogluinsaat.com.tr" target="_blank" rel="noopener">gencogluinsaat.com.tr</a> adresidir.</p>
+      </details>
+
+      <details>
+        <summary>Nasıl iletişime geçebilirim?</summary>
+        <p>Telefon: 0537 991 41 05 • E-posta: info@gencogluinsaat.com.tr • LinkedIn profil bağlantısı aşağıdadır.</p>
+      </details>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="iletisim" class="card section" style="margin-top:18px;">
+      <h2>İletişim</h2>
+      <p class="muted">Yunus Gençoğlu ile iletişime geçmek için aşağıdaki kanalları kullanabilirsiniz.</p>
+
+      <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:14px;">
+        <a class="btn primary" href="tel:+905379914105">Telefon: 0537 991 41 05</a>
+        <a class="btn primary" href="mailto:info@gencogluinsaat.com.tr">E-posta: info@gencogluinsaat.com.tr</a>
+        <a class="btn primary" href="https://linkedin.com/in/yunus-gen%C3%A7o%C4%9Flu-0822a7203" target="_blank" rel="noopener">LinkedIn Profili</a>
+        <a class="btn success" href="https://gencogluinsaat.com.tr" target="_blank" rel="noopener">Gençoğlu İnşaat Sitesi</a>
+      </div>
+
+      <p class="muted" style="margin-top:14px;">
+        Not: Bu sayfa resmi tanıtım amaçlı hazırlanmıştır.
+      </p>
+    </section>
+
+    <footer>
+      © <span id="yil"></span> Yunus Gençoğlu •
+      <a href="#ust">Sayfa başına dön</a>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("yil").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
