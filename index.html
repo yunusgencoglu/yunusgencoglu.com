@@ -3,283 +3,273 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Yunus Gençoğlu Kimdir? | İzmir | İnşaat ve Turizm Şirket Sahibi</title>
-  <meta name="description" content="Yunus Gençoğlu, İzmir’de inşaat ve turizm alanlarında faaliyet gösteren şirket sahibidir. 10+ yıl deneyim, önlisans eğitim ve profesyonel çalışmalar." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.yunusgencoglu.com/" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="profile" />
-  <meta property="og:title" content="Yunus Gençoğlu Kimdir?" />
-  <meta property="og:description" content="İzmir’de inşaat ve turizm alanlarında şirket sahibi. 10+ yıl deneyim." />
-  <meta property="og:url" content="https://www.yunusgencoglu.com/" />
-  <meta property="og:image" content="https://www.yunusgencoglu.com/assets/yunus.jpg" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Yunus Gençoğlu Kimdir?" />
-  <meta name="twitter:description" content="İzmir’de inşaat ve turizm alanlarında şirket sahibi. 10+ yıl deneyim." />
-  <meta name="twitter:image" content="https://www.yunusgencoglu.com/assets/yunus.jpg" />
-
-  <!-- Structured Data (Schema.org Person) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Yunus Gençoğlu",
-    "jobTitle": "İnşaat ve Turizm Girişimcisi",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "İzmir",
-      "addressCountry": "TR"
-    },
-    "alumniOf": "Önlisans",
-    "url": "https://www.yunusgencoglu.com/",
-    "image": "https://www.yunusgencoglu.com/assets/yunus.jpg",
-    "sameAs": []
-  }
-  </script>
+  <title>Yunus Gençoğlu | İnşaat ve Turizm Şirket Sahibi</title>
+  <meta name="description" content="Yunus Gençoğlu; İzmir'de inşaat ve turizm alanlarında faaliyet gösteren şirket sahibidir. 10+ yıllık deneyimiyle proje yönetimi ve operasyon süreçlerinde çalışmaktadır." />
+  <meta name="theme-color" content="#ffffff" />
 
   <style>
     :root{
-      --bg:#0b1020;
-      --card:#0f1733;
-      --text:#eaf0ff;
-      --muted:#b9c6ea;
-      --accent:#e11d48;
-      --border:rgba(255,255,255,.10);
-      --shadow: 0 16px 50px rgba(0,0,0,.35);
+      --bg:#ffffff;
+      --text:#0f172a;         /* slate-900 */
+      --muted:#475569;        /* slate-600 */
+      --card:#ffffff;
+      --border:#e2e8f0;       /* slate-200 */
+      --accent:#0ea5e9;       /* sky-500 */
+      --shadow: 0 10px 25px rgba(15, 23, 42, .08);
       --radius: 18px;
       --max: 1080px;
-      --pad: 22px;
-      font-synthesis-weight: none;
     }
-    *{box-sizing:border-box}
+
+    *{ box-sizing:border-box; }
     body{
       margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background:
-        radial-gradient(900px 420px at 20% 0%, rgba(225,29,72,.25), transparent 60%),
-        radial-gradient(900px 420px at 90% 10%, rgba(99,102,241,.18), transparent 60%),
-        var(--bg);
-      color:var(--text);
-      line-height:1.55;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
     }
-    a{color:inherit}
-    .wrap{max-width:var(--max); margin:0 auto; padding:40px 18px 64px;}
-    header{
-      display:flex; gap:24px; align-items:center; justify-content:space-between;
-      padding:18px 0 28px;
-      border-bottom:1px solid var(--border);
+
+    a{ color: inherit; text-decoration:none; }
+    .wrap{ max-width: var(--max); margin:0 auto; padding: 22px 16px 64px; }
+
+    /* Top bar */
+    .topbar{
+      position: sticky; top:0;
+      background: rgba(255,255,255,.85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      z-index: 10;
+    }
+    .topbar-inner{
+      max-width: var(--max);
+      margin:0 auto;
+      padding: 12px 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
     }
     .brand{
-      display:flex; flex-direction:column; gap:4px;
+      display:flex; flex-direction:column; gap:2px;
     }
-    .brand strong{font-size:20px; letter-spacing:.2px}
-    .brand span{color:var(--muted); font-size:14px}
-    nav{display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end}
-    nav a{
-      text-decoration:none;
-      padding:10px 12px;
-      border:1px solid var(--border);
-      border-radius:999px;
-      background:rgba(255,255,255,.03);
+    .brand strong{ font-size: 16px; letter-spacing:.2px; }
+    .brand span{ font-size: 13px; color: var(--muted); }
+
+    .nav{
+      display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;
     }
-    nav a:hover{border-color:rgba(255,255,255,.25)}
+    .nav a{
+      font-size: 13px;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #fff;
+    }
+    .nav a:hover{
+      border-color: #cbd5e1;
+      box-shadow: 0 6px 14px rgba(15,23,42,.06);
+    }
+
+    /* Hero */
     .hero{
+      margin-top: 22px;
       display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap:22px;
-      padding-top:28px;
-      align-items:stretch;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 18px;
+      align-items: start;
     }
+
     .card{
-      background: rgba(255,255,255,.03);
+      background: var(--card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
     }
-    .heroText{padding:28px}
-    h1{margin:0 0 10px; font-size:40px; line-height:1.15}
-    .subtitle{margin:0 0 18px; color:var(--muted); font-size:16px}
-    .chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px}
-    .chip{
-      padding:8px 10px;
-      border:1px solid var(--border);
-      border-radius:999px;
-      font-size:13px;
-      color:var(--muted);
-      background:rgba(255,255,255,.02);
+    .hero-text{ padding: 22px; }
+    h1{
+      margin:0 0 10px;
+      font-size: 38px;
+      line-height: 1.15;
+      letter-spacing: -0.4px;
     }
-    .heroPhoto{overflow:hidden; display:flex; align-items:stretch}
-    .heroPhoto img{
-      width:100%; height:100%;
-      object-fit:cover;
-      display:block;
-      filter: saturate(1.05) contrast(1.02);
+    .lead{ margin:0 0 14px; color: var(--muted); font-size: 15px; }
+
+    .badges{ display:flex; flex-wrap:wrap; gap:10px; margin-top: 14px; }
+    .badge{
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background:#fff;
+      min-width: 160px;
     }
-    .grid{
+    .badge b{ display:block; font-size: 18px; }
+    .badge small{ color: var(--muted); }
+
+    .tags{ display:flex; flex-wrap:wrap; gap:8px; margin-top: 14px; }
+    .tag{
+      font-size: 12px;
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: #0f172a;
+      background:#fff;
+    }
+
+    /* Photo card */
+    .photo-card{
+      padding: 14px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .photo{
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background:#f8fafc;
+    }
+    .photo-meta{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      padding: 2px 2px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* Sections */
+    .grid2{
+      margin-top: 18px;
       display:grid;
       grid-template-columns: 1fr 1fr;
-      gap:18px;
-      margin-top:18px;
+      gap: 18px;
     }
-    .section{padding:22px}
-    h2{margin:0 0 10px; font-size:22px}
-    p{margin:0 0 10px}
-    ul{margin:10px 0 0 18px; color:var(--muted)}
-    .kpi{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:12px;
-      margin-top:14px;
+    .section{ padding: 20px 22px; }
+    .section h2{
+      margin:0 0 10px;
+      font-size: 20px;
+      letter-spacing: -.2px;
     }
-    .kpi .item{
-      padding:14px;
-      border:1px solid var(--border);
-      border-radius:16px;
-      background:rgba(255,255,255,.02);
+    ul{ margin:10px 0 0 18px; color: var(--muted); }
+    li{ margin: 6px 0; }
+
+    .contact{
+      margin-top: 18px;
+      padding: 20px 22px;
     }
-    .kpi .num{font-size:20px; font-weight:700}
-    .kpi .lbl{color:var(--muted); font-size:13px; margin-top:4px}
-    footer{
-      margin-top:34px;
-      padding-top:18px;
-      border-top:1px solid var(--border);
-      color:var(--muted);
-      font-size:13px;
-      display:flex;
-      gap:10px;
-      justify-content:space-between;
-      flex-wrap:wrap;
+    .contact p{ margin:0; color: var(--muted); }
+    .contact .hint{ margin-top: 10px; font-size: 13px; }
+    .pill{
+      display:inline-block;
+      margin-top: 10px;
+      padding: 10px 12px;
+      border: 1px dashed #cbd5e1;
+      border-radius: 14px;
+      color: var(--muted);
+      background:#fff;
     }
-    .contactBox{
-      display:grid; gap:10px;
-      margin-top:10px;
-      padding:14px;
-      border:1px dashed rgba(255,255,255,.22);
-      border-radius:16px;
-      color:var(--muted);
-      background:rgba(255,255,255,.02);
-    }
-    .contactBox a{color:var(--text); text-decoration:none}
-    .contactBox a:hover{text-decoration:underline}
-    @media (max-width: 900px){
-      .hero{grid-template-columns:1fr}
-      h1{font-size:34px}
-      nav{justify-content:flex-start}
-      .kpi{grid-template-columns:1fr}
-      .grid{grid-template-columns:1fr}
+
+    /* Mobile: FOTOĞRAF EN ÜSTE */
+    @media (max-width: 860px){
+      .hero{
+        grid-template-columns: 1fr;
+      }
+      /* Fotoğraf kartı ilk gelsin */
+      .photo-card{ order: -1; }
+      h1{ font-size: 32px; }
+      .badge{ min-width: 0; flex: 1 1 140px; }
+      .grid2{ grid-template-columns: 1fr; }
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <header>
+  <header class="topbar">
+    <div class="topbar-inner">
       <div class="brand">
         <strong>Yunus Gençoğlu</strong>
         <span>İzmir • İnşaat ve Turizm Şirket Sahibi</span>
       </div>
-      <nav>
+      <nav class="nav" aria-label="Sayfa menüsü">
         <a href="#hakkinda">Hakkında</a>
         <a href="#deneyim">Deneyim</a>
         <a href="#iletisim">İletişim</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero">
-        <div class="card heroText">
-          <h1>Yunus Gençoğlu kimdir?</h1>
-          <p class="subtitle">
-            Yunus Gençoğlu, İzmir’de <strong>inşaat</strong> ve <strong>turizm</strong> alanlarında faaliyet gösteren şirket sahibidir.
-            <strong>10+ yıl</strong> sektör deneyimiyle proje yönetimi, iş geliştirme ve operasyon süreçlerinde çalışmaktadır.
-          </p>
+  <main class="wrap">
+    <section class="hero">
+      <article class="card hero-text">
+        <h1>Yunus Gençoğlu kimdir?</h1>
+        <p class="lead">
+          Yunus Gençoğlu, İzmir’de inşaat ve turizm alanlarında faaliyet gösteren şirket sahibidir.
+          10+ yıl sektör deneyimiyle proje yönetimi, iş geliştirme ve operasyon süreçlerinde çalışmaktadır.
+        </p>
 
-          <div class="kpi" aria-label="Öne çıkan bilgiler">
-            <div class="item">
-              <div class="num">10+ yıl</div>
-              <div class="lbl">İş deneyimi</div>
-            </div>
-            <div class="item">
-              <div class="num">İzmir</div>
-              <div class="lbl">Şehir</div>
-            </div>
-            <div class="item">
-              <div class="num">Önlisans</div>
-              <div class="lbl">Eğitim</div>
-            </div>
+        <div class="badges" role="list">
+          <div class="badge" role="listitem">
+            <b>10+ yıl</b><small>İş deneyimi</small>
           </div>
-
-          <div class="chips" aria-label="Etiketler">
-            <span class="chip">İnşaat</span>
-            <span class="chip">Turizm</span>
-            <span class="chip">Girişimcilik</span>
-            <span class="chip">Proje Yönetimi</span>
+          <div class="badge" role="listitem">
+            <b>İzmir</b><small>Şehir</small>
+          </div>
+          <div class="badge" role="listitem">
+            <b>Önlisans</b><small>Eğitim</small>
           </div>
         </div>
 
-        <div class="card heroPhoto" aria-label="Yunus Gençoğlu fotoğrafı">
-          <img src="assets/yunus.jpg" alt="Yunus Gençoğlu" loading="eager" />
+        <div class="tags" aria-label="İlgi alanları">
+          <span class="tag">İnşaat</span>
+          <span class="tag">Turizm</span>
+          <span class="tag">Girişimcilik</span>
+          <span class="tag">Proje Yönetimi</span>
         </div>
-      </section>
+      </article>
 
-      <section class="grid">
-        <article id="hakkinda" class="card section">
-          <h2>Hakkında</h2>
-          <p>
-            Yunus Gençoğlu; inşaat ve turizm alanlarında şirket sahibi olarak,
-            sürdürülebilir büyüme, hizmet kalitesi ve operasyonel verimlilik odaklı çalışır.
-          </p>
-          <ul>
-            <li>Çalışma odağı: inşaat projeleri ve turizm operasyonları</li>
-            <li>Yaklaşım: planlama, süreç yönetimi ve sonuç odaklı yürütme</li>
-            <li>Lokasyon: İzmir</li>
-          </ul>
-        </article>
-
-        <article id="deneyim" class="card section">
-          <h2>Deneyim</h2>
-          <p>
-            10+ yıllık deneyim kapsamında; proje koordinasyonu, saha/operasyon yönetimi,
-            tedarik ve ekip süreçleri ile iş geliştirme faaliyetlerinde bulunmuştur.
-          </p>
-          <ul>
-            <li>Şirket sahipliği ve yönetim</li>
-            <li>Operasyon ve süreç yönetimi</li>
-            <li>Proje planlama ve koordinasyon</li>
-          </ul>
-        </article>
-      </section>
-
-      <section id="iletisim" class="card section" style="margin-top:18px;">
-        <h2>İletişim</h2>
-        <p class="subtitle" style="margin-top:0;">
-          İletişim bilgilerinizi isterseniz buraya ekleyebiliriz (telefon / e-posta / LinkedIn).
-        </p>
-
-        <div class="contactBox">
-          <div><strong>E-posta:</strong> <a href="mailto:info@yunusgencoglu.com">info@yunusgencoglu.com</a> <span style="color:var(--muted)">(örnek)</span></div>
-          <div><strong>LinkedIn:</strong> <a href="#" rel="nofollow">link ekle</a></div>
-          <div><strong>Instagram:</strong> <a href="#" rel="nofollow">link ekle</a></div>
+      <aside class="card photo-card" aria-label="Profil fotoğrafı">
+        <img class="photo" src="assets/yunus.jpg" alt="Yunus Gençoğlu" loading="eager" />
+        <div class="photo-meta">
+          <span>Profil</span>
+          <span>Güncellendi</span>
         </div>
+      </aside>
+    </section>
 
-        <p style="color:var(--muted); margin-top:12px; font-size:13px;">
-          Not: Buradaki linkleri sizden gelecek gerçek adreslerle güncelleriz.
+    <section class="grid2">
+      <article id="hakkinda" class="card section">
+        <h2>Hakkında</h2>
+        <p class="lead" style="margin-bottom:8px;">
+          İnşaat ve turizm alanlarında şirket sahibi olarak; sürdürülebilir büyüme, hizmet kalitesi ve operasyonel verimlilik odağında çalışır.
         </p>
-      </section>
-    </main>
+        <ul>
+          <li>Çalışma odağı: inşaat projeleri ve turizm operasyonları</li>
+          <li>Yaklaşım: planlama, süreç yönetimi ve sonuç odaklı yürütme</li>
+          <li>Lokasyon: İzmir</li>
+        </ul>
+      </article>
 
-    <footer>
-      <span>© <span id="y"></span> Yunus Gençoğlu</span>
-      <span>yunusgencoglu.com</span>
-    </footer>
-  </div>
+      <article id="deneyim" class="card section">
+        <h2>Deneyim</h2>
+        <p class="lead" style="margin-bottom:8px;">
+          10+ yıllık deneyim kapsamında; proje koordinasyonu, saha/operasyon yönetimi, tedarik ve ekip süreçleri ile iş geliştirme faaliyetlerinde bulunmuştur.
+        </p>
+        <ul>
+          <li>Şirket sahipliği ve yönetim</li>
+          <li>Operasyon ve süreç yönetimi</li>
+          <li>Proje planlama ve koordinasyon</li>
+        </ul>
+      </article>
+    </section>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+    <section id="iletisim" class="card contact">
+      <h2 style="margin:0 0 8px; font-size:20px;">İletişim</h2>
+      <p>İsterseniz buraya iletişim bilgilerinizi ekleyebiliriz (telefon / e-posta / LinkedIn).</p>
+      <div class="pill">Örnek: linkedin.com/in/kullaniciadi • mail@domain.com</div>
+      <p class="hint">Not: Bilgileri yazarsanız ben sayfaya şık şekilde yerleştiririm.</p>
+    </section>
+  </main>
 </body>
 </html>
